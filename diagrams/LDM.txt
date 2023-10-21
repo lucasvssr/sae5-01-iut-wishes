@@ -1,0 +1,23 @@
+USER: _idUser,#idRole,#idWish, firstName, lastName, email, phone, adress, town, postalCode, login, password
+
+Role: _idRole, #idUser, name
+
+Wish: _idWish, nbGroups
+
+Subject : _idSubject, #idWish, #idInformation, #idHoursWeek, #idCategory, #idSemester, name, description
+
+Semester : _idSemester, #idSubject, number
+
+Year : _idYear, #idSemester, startYear, endYear, limitDate
+
+Category : _idCategory, #idSubject, name
+
+Code : _idCode, #idSubject, name
+
+HoursWeek : _idHoursWeek, nbHours
+
+Week : _idWeek, #idHoursWeek, number, isHoliday
+
+Information : _idInformation, hours, isLES, maxGroups
+
+Type : _idType, #idInformation, name
